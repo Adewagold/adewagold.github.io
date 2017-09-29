@@ -32,7 +32,10 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="github-activity.min.js"> </script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="github-activity.min.css">
 </head> 
 
 <body>
@@ -189,17 +192,10 @@
                 </section><!--//section-->
                 <section class="github section">
                     <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        <h2 class="heading">My GitHub Activity</h2>
+                        <p> <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
                         
-                        <div id="github-graph" class="github-graph">
-
-                        </div><!--//github-graph-->
-
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.        
-                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
+                       <div id="feed"></div>
                         
                     </div><!--//secton-inner-->
                 </section><!--//section-->
@@ -229,7 +225,7 @@
                                 <div class="item">
                                     <h3 class="level-title">PHP &amp; Laravel<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Professional</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
+                                        <div class="level-bar-inner" data-level="86%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
@@ -367,13 +363,7 @@
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js">
-        
-        GitHubActivity.feed({
-    username: "adewagold",
-    repository: "", // optional
-    selector: "#feed",
-    limit: 20 // optional
-});
+      GitHubActivity.feed({ username: "adewagold", selector: "#feed" });
     </script>            
 </body>
 </html> 
